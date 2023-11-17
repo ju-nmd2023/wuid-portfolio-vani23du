@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="CSS/mywork.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="grid">
+
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutme.html">ABOUT ME</a></li>
+                    <li><a href="mywork.html">MY WORK</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- The following 12 lines I got a lot of help fron GreatStack from his video: https://www.youtube.com/watch?v=sHG3Sf6XN9g&t=305s-->
+
+            <h2>GALLERY</h2>
+
+            <div class="full-img" id="fullImgBox">
+                <img src="images/black-notmine1.jpeg" alt="" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+                <!--Following 2 lines is created from chat GPT because the projects are not mine and and therefor "fake"-->
+                <h3>Project Title: "Ink Noir: Minimalist Typography Book Cover"</h3>
+                <p>A sleek book cover design featuring the word "BOOK" in cool, <br> contemporary typography against a black background. <br> The minimalist composition exudes modernity and style, <br> making a bold visual statement that seamlessly <br> integrates text and graphic elements.</p>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <img src="images/black-notmine1.jpeg" alt="" onclick="openFullImg(this.src)">
+                <img src="images/red-notmine1.jpeg" alt="">
+                <img src="images/black.notmine2.jpeg" alt="">
+                <img src="images/red-notmine2.jpeg" alt="">
+                <img src="images/black-notmine3.jpeg" alt="">
+                <img src="images/red-notmine3.jpeg" alt="">
+                    
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Background image by <a href="https://www.freepik.com/free-vector/nothern-lights-landing-page_5417874.htm?query=aurora%20lights%20green%20liguid#from_view=detail_alsolike">Freepik.</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- I´m going to fix the problem with the full image popping up when clicking on "my work". It's not suposed to be like that. Fix this later. -->
+    <!-- The following 8 script lines I got a lot of help fron GreatStack from his video: https://www.youtube.com/watch?v=sHG3Sf6XN9g&t=305s-->
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic; 
+        }
+
+        function closeFullImg(pic){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
