@@ -30,7 +30,7 @@
             <h2>GALLERY</h2>
 
             <div class="full-img" id="fullImgBox">
-                <img src="images/black-notmine1.jpeg" alt="" id="fullImg">
+                <img src="images/black-notmine1.jpeg" id="fullImg">
                 <span onclick="closeFullImg()">X</span>
                 <!--Following 2 lines is created from chat GPT because the projects are not mine and and therefor "fake"-->
                 <h3>Project Title: "Ink Noir: Minimalist Typography Book Cover"</h3>
@@ -39,12 +39,12 @@
 
             <div class="gallery-grid">
                 
-                <img src="images/black-notmine1.jpeg" alt="" onclick="openFullImg(this.src)">
-                <img src="images/red-notmine1.jpeg" alt="">
-                <img src="images/black.notmine2.jpeg" alt="">
-                <img src="images/red-notmine2.jpeg" alt="">
-                <img src="images/black-notmine3.jpeg" alt="">
-                <img src="images/red-notmine3.jpeg" alt="">
+                <img class="hover-an" src="images/black-notmine1.jpeg" onclick="openFullImg(this.src)">
+                <img class="hover-an" src="images/red-notmine1.jpeg" onclick="openFullImg(this.src)">
+                <img class="hover-an" src="images/black-notmine2.jpeg" onclick="openFullImg(this.src)">
+                <img class="hover-an" src="images/red-notmine2.jpeg"  onclick="openFullImg(this.src)">
+                <img class="hover-an" src="images/black-notmine3.jpeg" onclick="openFullImg(this.src)">
+                <img class="hover-an" src="images/red-notmine3.jpeg" onclick="openFullImg(this.src)">
                     
             </div>
 
@@ -58,23 +58,7 @@
 
     </div>
 
-    <!-- I´m going to fix the problem with the full image popping up when clicking on "my work". It's not suposed to be like that. Fix this later. -->
-    <!-- The following 8 script lines I got a lot of help fron GreatStack from his video: https://www.youtube.com/watch?v=sHG3Sf6XN9g&t=305s-->
-    <script>
-
-        var fullImgBox = document.getElementById("fullImgBox");
-        var fullImg = document.getElementById("fullImg");
-
-        function openFullImg(pic){
-            fullImgBox.style.display = "flex";
-            fullImg.src = pic; 
-        }
-
-        function closeFullImg(pic){
-            fullImgBox.style.display = "none";
-        }
-
-    </script>
+    <script src="JS/mywork.js"></script>
 
 </body>
 </html>
