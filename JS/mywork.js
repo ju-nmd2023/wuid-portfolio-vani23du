@@ -12,4 +12,3 @@ function closeFullImg() {
     fullImgBox.style.display = "none";
 }
 
-
