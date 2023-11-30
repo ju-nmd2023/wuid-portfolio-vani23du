@@ -90,6 +90,7 @@ a:visited {
 label {
     color: rgb(255, 255, 255);
     margin-bottom: 1%;
+    font-size: 18px;
 }
 
 .contact-container h3 {
@@ -137,4 +138,49 @@ label {
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+
+/* MEDIA QUARIES */
+
+@media screen and (max-width: 800px) {
+    ul {
+        font-size: 15px;
+    }
+
+    .contact-container h3 {
+        font-size: 17px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    .button {
+        width: 120px;
+        margin: 3% auto auto auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    ul {
+        font-size: 10px;
+    }
+
+    .contact-container h3 {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 9px;
+    }
+
+    .button {
+        width: 100px;
+        margin: 3% auto auto auto;
+    }
+
+    .message {
+        padding: 0 10% 0 10%;
+    }
 }
